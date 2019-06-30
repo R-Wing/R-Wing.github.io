@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    border-right: 3px solid #79dbaa;
+}
+
+.left nav {
+    display: flex;
+    height: 5vh;
+    background-color: #79dbaa;
+    justify-content: center;
+    align-items: center; 
+}
+
+.left .inputContainer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .inputContainer li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .inputContainer input{
+    width: 25%;
+}
+
+.left nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+}
+
+.left .newFund {
+    margin-top: 25px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #79dbaa;
+}
+
+.left .newFund input {
+    height: 40px;
+    width: 90%;
+    border: none;
+}
+
+.left .newFund .plus {
+    height: 40px;
+    width: 10%;
+    text-align: center;
+    background-color: #79dbaa;
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.left .funds {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    border: 2px solid #79dbaa;
+    padding: 5px;
+}
+
+.left li {
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+}
+
+.left li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+.left .icon {
+    background-color: #e74c3c;
+    height: 40px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.2s linear;
+}
+
+.left li:hover .icon {
+    width: 40px;
+    opacity: 1;
+}
+
+.left input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    line-height: 40px;
+    font-size: 28px;
+    width: 15%;
+    text-align: center;
+}
+
+.left .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    background-color: #79dbaa;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover, .left .newFund .plus:hover {
+    background-color: #66bc91;
+}
+
+.btn:active, .left .newFund .plus:active {
+    background-color: #5aad84;
+    outline: none;
+}
+
+.left .leftoveralert {
+    margin-top: 25px;
+    border: 2px solid #79dbaa;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .leftoveralert li{
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comingsoon {
+    /* background-color: #79dbaa; */
+    /* width: 75% !important;
+    height: 50% !important; */
+    width: 1000px !important;
+    height: 500px !important;
+}
