@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/fundStyle.css">
+    <link rel="stylesheet" href="./public/styles/navbarStyle.css">
+    <title>Money Manager</title>
+</head>
+<body>
+
+    <section class="left">
+        <nav>
+            <a href="#">MONEY MANAGER</a>
+        </nav>
+
+        <div class="funds">
+            <ul id="fundList">
+                <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Savings</span> - <span class="fund-money"><span class="amountSaved">873</span>/ <span class="goal">1000</span> </span> <div class="progress-bar"><div class="progress"><span class="progress-text">75%</span></div></div> </li>
+                <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Spending</span> - <span class="fund-money"><span class="amountSaved">445</span>/ <span class="goal">1000</span>    </span> <div class="progress-bar"><div class="progress"><span class="progress-text">75%</span></div></div> </li>
+                <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Bills</span> - <span class="fund-money"><span class="amountSaved">339</span>/ <span class="goal">1000</span>   </span> <div class="progress-bar"><div class="progress"><span class="progress-text">75%</span></div></div> </li>
+            </ul>
+        </div>
+
+        <div class="buttonContainer">
+            <button class="btn" id="newFundBtn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <p>Fund Name</p>
+                <div class="break"></div>
+                <input type="text" id="name">
+                <div class="break"></div>
+                <p>Starting Amount</p>
+                <div class="break"></div>
+                <input type="text" id="startAmount">
+                <div class="break"></div>
+                <p>Goal Amount</p>
+                <div class="break"></div>
+                <input type="text" id="goal">
+                <div class="break"></div>
+                <button class="btn" id="addBtn">Add!</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./public/scripts/fundScript.js"></script>
+</body>
+</html>

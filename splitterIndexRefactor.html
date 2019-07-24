@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/splitterStyleRefactor.css">
+    <link rel="stylesheet" href="./public/styles/navbarStyle.css">
+    <title>Money Manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav child">
+            <nav>
+                <a href="./fundIndexRefactor.html">Funds</a>
+                <a href="./landingIndex.html"><i class="fas fa-wallet"></i></a>
+                <a href="./splitterIndexRefactor.html">Splitter</a>
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="left child">
+
+                <div class="inputContainer">
+                    <li>Total Amount: $ <input type="text" name="total" value="1000"></li>
+                </div>
+        
+                <div class="centered">
+                    <div class="newFund">
+                        <input type="text" placeholder="Add New Fund" name="newFund">
+                        <span class="plus" id="addBtn"><i class="fas fa-plus"></i></span>
+                    </div>
+                </div>
+        
+                <div class="funds">
+                    <ul id="fundList">
+                        <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Savings</span> <input type="text" name="fund" value="30">% &nbsp | <span class="amount">$0.00</span></li>
+                        <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Spending</span> <input type="text" name="fund" value="20">% &nbsp | <span class="amount">$0.00</span></li>
+                        <li> <span class="icon"><i class="fas fa-trash"></i></span> <span class="fundName">Bills</span> <input type="text" name="fund" value="50">% &nbsp | <span class="amount">$0.00</span></li>
+                    </ul>
+                </div>
+        
+                <div class="buttonContainer">
+                    <button class="btn" id="calculate">Calculate</button>
+                </div>
+        
+                <div class="centered">
+                    <div class="leftoveralert">
+                        <li>You have $<span id="leftoveramount">0.00</span> left over</li>
+                    </div>
+                </div>
+            </div>
+            <div class="right child">
+                <canvas class="comingsoon" id="chart">
+        
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="./decimal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./public/scripts/splitterScript.js"></script>
+</body>
+</html>
